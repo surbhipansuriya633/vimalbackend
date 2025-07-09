@@ -3,6 +3,8 @@ import express from "express";
 import cors from "cors";
 import productRoutes from "./Product/ProductRoutes.js";
 import productImageRoute from "./Product/productImageRoute.js";
+import AddBlog from "./Blog/addBlog.js";
+import Recepie from "./Blog/Recepie.js";
 
 const app = express();
 app.use(express.json());
@@ -11,5 +13,8 @@ Connection();
 
 app.use("/api/products", productRoutes);
 app.use('/api/upload', productImageRoute);
+
+app.use('/api/blog', AddBlog);
+app.use('/recepie/add', Recepie);
 
 app.listen(8000);
