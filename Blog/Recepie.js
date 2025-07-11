@@ -15,6 +15,15 @@ Recepie.post("/", async (req, res) => {
     }
 });
 
+Recepie.get("/", async (req, res) => {
+    try {
+        const recipes = await recepie.find();
+        res.json(recipes);
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
 // Get recipes by blogId
 Recepie.get("/:blogId", async (req, res) => {
     try {
