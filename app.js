@@ -3,12 +3,13 @@ import express from "express";
 import cors from "cors";
 import productRoutes from "./Product/ProductRoutes.js";
 import productImageRoute from "./Product/productImageRoute.js";
-import AddBlog from "./Blog/addBlog.js";
+
 import Recepie from "./Blog/Recepie.js";
 import brandRoutes from "./Brand/brandRoutes.js";
 import testimonialRoute from "./Testimonial/testimonialRoute.js";
 import FaqRoute from "./FAQ/FAQroutes.js";
 import CertificatesRoutes from "./Certificates/CertificatesRoutes.js";
+import AddBlog from "./Blog/addBlog.js";
 
 const app = express();
 app.use(express.json());
