@@ -8,6 +8,7 @@ import Recepie from "./Blog/Recepie.js";
 import brandRoutes from "./Brand/brandRoutes.js";
 import testimonialRoute from "./Testimonial/testimonialRoute.js";
 import FaqRoute from "./FAQ/FAQroutes.js";
+import CertificatesRoutes from "./Certificates/CertificatesRoutes.js";
 
 const app = express();
 app.use(express.json());
@@ -26,5 +27,7 @@ app.use('/brand/add', brandRoutes);
 app.use("/api/testimonial", testimonialRoute);
 
 app.use("/api/faqs", FaqRoute);
+
+app.use("/api/certificates", CertificatesRoutes);
 
 app.listen(8000);
