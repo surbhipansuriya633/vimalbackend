@@ -9,7 +9,7 @@ import brandRoutes from "./Brand/brandRoutes.js";
 import testimonialRoute from "./Testimonial/testimonialRoute.js";
 import FaqRoute from "./FAQ/FAQroutes.js";
 import CertificatesRoutes from "./Certificates/CertificatesRoutes.js";
-import AddBlog from "./Blog/addBlog.js";
+import AddBlog from "./Blog/AddBlog.js";
 
 const app = express();
 app.use(express.json());
