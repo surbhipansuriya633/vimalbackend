@@ -1,5 +1,5 @@
 import express from 'express'
-import { Blogschema } from './schema.js'
+import { Blogschema } from './Schema.js'
 
 const AddBlog = express.Router()
 AddBlog.get('/', async (req, res) => {
